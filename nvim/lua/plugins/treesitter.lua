@@ -1,0 +1,35 @@
+return {
+	"nvim-treesitter/nvim-treesitter",
+	opts = {
+		ensure_installed = {
+			"java",
+			"python",
+			"lua",
+			"bash",
+			"json",
+			"yaml",
+			"html",
+			"css",
+			"javascript",
+			"typescript",
+			"rust",
+			"go",
+			"php",
+			"ruby",
+			"toml",
+			"vue",
+			"cmake",
+			"dockerfile",
+			"regex",
+			"query",
+			"comment",
+			"vim",
+			"c_sharp",
+			"dart",
+		},
+		hightlight = { enable = true },
+	},
+	config = function(_, opts)
+		require("nvim-treesitter.configs").setup(opts)
+	end,
+}

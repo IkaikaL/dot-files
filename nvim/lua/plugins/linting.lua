@@ -1,0 +1,26 @@
+return {
+	"mfussenegger/nvim-lint",
+	event = { "BufReadPre", "BufNewFile" },
+	opts = {
+		linters_by_ft = {
+			javascript = { "eslint_d" },
+			typescript = { "eslint_d" },
+			typescriptreact = { "eslint_d" },
+			javascriptreact = { "eslint_d" },
+			lua = { "luacheck" },
+			svelte = { "eslint_d" },
+			html = { "htmlhint" },
+			json = { "jsonlint" },
+			python = { "flake8" },
+			ruby = { "rubocop" },
+			css = { "stylelint" },
+			go = { "golangcilint" },
+			vue = { "eslint_d" },
+			dockerfile = { "hadolint" },
+			yaml = { "yamllint" },
+			angular = { "eslint_d" },
+			scss = { "stylelint" },
+			tailwindcss = { "stylelint" },
+		},
+	},
+}
